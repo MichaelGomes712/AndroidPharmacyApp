@@ -1,4 +1,4 @@
-# AndroidPharmacyApp utilising MySQL as DB Service
+# AndroidPharmacyApp utilising MySQL as backend DB Service
 
 ## Brief Description of App
 Our app was named “Happy Pills Pharmacy”. It essentially is an online pharmaceutical shop aimed at 3 different users: Admin, Doctor and Customer/Patient. All these users are given the ability to login.
@@ -7,20 +7,20 @@ Its main function for the doctor is to allow the doctor to make prescriptions fo
 Its main function for the admin is to allow the admin to add new pharmaceuticals to the database for purchase and to add new doctor profiles to the system. Also the admin is available to see the details of all orders ever created.
 
 ## Business Rules
-•	Each Customer/Patient can be uniquely identified by their Customer ID.
-•	Each Doctor can be uniquely identified by their Doctor ID.
-•	Each Admin can be uniquely identified by their Admin ID.
-•	Each Pharmaceutical can be uniquely identified by their Pharmaceutical ID.
-•	Each Order can be uniquely identified by an auto-incrementing Order Number.
-•	Each Prescription can be uniquely identified by an auto-incrementing Prescription Number.
-•	Each Customer/Patient can have zero or one selected Doctor.
-•	Each Doctor can be selected as a doctor by zero or many Customers/Patients.
-•	Each Customer/Patient can be either verified or not by the Doctor they selected.
-•	A Prescription cannot be prescribed by a Doctor to a Customer/Patient unless that Customer/Patient has been verified. 
-•	Each Customer/Patient can create zero or many Orders.
-•	Each Order can be made by only one Customer/Patient.
-•	Each Prescription can be prescribed to one and only one Customer/Patient.
-•	Each Customer/Patient can have zero or many Prescriptions.
-•	A Prescription for a Customer/Patient will be auto added to their cart if enough stock of the Pharmaceuticals prescribed exist. Also a Prescription for a Customer/Patient will be auto added to their cart if the number of Repeats Left is greater than 1.
-•	The Date Completed for an Order may not be before the Date Ordered of that same Order.
-•	A Pharmaceutical may only be available for purchase if its Quantity is not zero.
+*	Each Customer/Patient can be uniquely identified by their Customer ID.
+*	Each Doctor can be uniquely identified by their Doctor ID.
+*	Each Admin can be uniquely identified by their Admin ID.
+*	Each Pharmaceutical can be uniquely identified by their Pharmaceutical ID.
+*	Each Order can be uniquely identified by an auto-incrementing Order Number.
+*	Each Prescription can be uniquely identified by an auto-incrementing Prescription Number.
+*	Each Customer/Patient can have zero or one selected Doctor.
+*	Each Doctor can be selected as a doctor by zero or many Customers/Patients.
+*	Each Customer/Patient can be either verified or not by the Doctor they selected.
+*	A Prescription cannot be prescribed by a Doctor to a Customer/Patient unless that Customer/Patient has been verified. 
+*	Each Customer/Patient can create zero or many Orders.
+*	Each Order can be made by only one Customer/Patient.
+*	Each Prescription can be prescribed to one and only one Customer/Patient.
+*	Each Customer/Patient can have zero or many Prescriptions.
+*	A Prescription for a Customer/Patient will be auto added to their cart if enough stock of the Pharmaceuticals prescribed exist. Also a Prescription for a Customer/Patient will be auto added to their cart if the number of Repeats Left is greater than 1.
+*	The Date Completed for an Order may not be before the Date Ordered of that same Order.
+*	A Pharmaceutical may only be available for purchase if its Quantity is not zero.
