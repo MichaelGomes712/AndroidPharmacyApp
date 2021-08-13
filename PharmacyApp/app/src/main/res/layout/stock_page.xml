@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF">
+
+    <Button
+        android:id="@+id/LogOutBtnStockIndexPage"
+        android:layout_width="66dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:text="Log Out"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stockIndexPageCreateNewStockItem"
+        android:layout_width="149dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:text="Create New Stock Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockIndexPageSearchForStockItem" />
+
+    <Button
+        android:id="@+id/stockIndexPageListAllStockItems"
+        android:layout_width="149dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="58dp"
+        android:text="List All Stock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogOutBtnStockIndexPage" />
+
+    <Button
+        android:id="@+id/stockIndexPageSearchForStockItem"
+        android:layout_width="149dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:text="Search For Stock Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockIndexPageListAllStockItems" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
+    tools:context=".cart_order">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00FFFF"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme"
+            app:title="@string/app_name"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/Rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cartRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnPlace"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnPlace"
+        android:text="PLACE ORDER"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linPopUp"
+        android:layout_width="391dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="391dp"
+            android:layout_height="367dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linPopUp"
+                android:layout_alignParentStart="true"
+                android:text="Confirm Prescription"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:text="Enter patient name and surname:"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter customer name and surname "
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/Repeats"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="0.1"
+                android:gravity="center_horizontal"
+                android:text="Repeats"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/Txt_count"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0.1"
+                android:gravity="center_horizontal"
+                app:backGroundColor="@color/colorPrimaryDark"
+                app:initialNumber="1"
+                app:textSize="6sp">
+
+            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            <Button
+                android:id="@+id/btnCancel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnAddPrescription2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Confirm Prescription"
+                tools:text="Confirm Prescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu"/>
+
+</android.support.v4.widget.DrawerLayout>

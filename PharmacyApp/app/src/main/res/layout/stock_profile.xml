@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF">
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="66dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:text="Log Out"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtn">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Item ID:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="ID" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Name:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Schedule:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoSchedule"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Schedule" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Costprice:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoCostprice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Costprice" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Makrup:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoMarkup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Markup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Discount:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoDiscount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Discount" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Available quantity:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoAvailable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Available quantity" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Selling price:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoSellingprice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Selling price" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Manufacturer:" />
+
+                    <TextView
+                        android:id="@+id/stockProfileInfoManufacturer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Manufacturer" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

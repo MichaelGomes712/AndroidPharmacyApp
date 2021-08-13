@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Happy Pills Pharmacy</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="nav_draw_open">Open Navigation drawer</string>
+    <string name="nav_draw_close">Close Navigation drawer</string>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
+    tools:context=".profile"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00FFFF"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme"
+            app:title="@string/app_name"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="392dp"
+                android:text="Edit Info" />
+
+            <EditText
+                android:id="@+id/edtID"
+                android:layout_width="310dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="84dp"
+                android:ems="10"
+                android:hint="ID Number"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtFName"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="184dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtSName"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="232dp"
+                android:ems="10"
+                android:hint="Surname"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtDoc"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="288dp"
+                android:ems="10"
+                android:hint="Doctor"
+                android:inputType="textPersonName"
+                android:visibility="invisible"/>
+            <Spinner
+                android:id="@+id/spinDoctor"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="300dp"
+                android:ems="10"
+                android:hint="Doctor"
+                android:visibility="invisible">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edtMail"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="340dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="10dp"
+                android:text="View Info"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:text="View Info" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="711dp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="475dp"
+                android:text="Cancel"
+                tools:text="Cancel" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="392dp"
+                android:ems="10"
+                android:hint="New Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirm"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="436dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="left" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="475dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="8dp"
+                android:text="Submit"
+                tools:text="Submit" />
+
+            <Button
+                android:id="@+id/btnHisory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="392dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="52dp"
+                android:text="View Purchase History"
+                app:layout_constraintEnd_toEndOf="@+id/barrier"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnEdit"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="132dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu"/>
+
+</android.support.v4.widget.DrawerLayout>
